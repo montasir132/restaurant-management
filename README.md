@@ -1,4 +1,3 @@
-```markdown
 # 🍽️ Restaurant Management System (Python)
 
 A simple **Restaurant Management System** built with Python OOP concepts.  
