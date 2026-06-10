@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Management System (Python)
+# 🍽️ Restaurant Management System
 
 A simple **Restaurant Management System** built with Python OOP concepts.  
 This project demonstrates how to manage customers, admins, employees, menus, and orders in a restaurant environment.
@@ -63,7 +63,7 @@ This project demonstrates how to manage customers, admins, employees, menus, and
 ---
 
 ## 🛠️ Technologies Used
-- Python 3.x
+- Python 3.14
 - Object-Oriented Programming (OOP)
 
 ---
