@@ -12,6 +12,7 @@ class Restaurent:
         self.employees.append(employee)
         
     def view_employee(self):
-        print("Employee List!!")
+        print("************Employee List************")
+        print("Name\tEmail\tPhone\taddress")
         for emp in self.employees:
             print(emp.name, emp.email, emp.phone, emp.address)

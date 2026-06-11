@@ -18,7 +18,7 @@ class Menu:
         else:
             print("item not found")
     def show_menu(self):
-        print("************Menu*****************")
+        print("************Menu************")
         print("Name\tprice\tQuantity")
         for item in self.items:
             print(f"{item.name}\t{item.price}\t{item.quantity}")

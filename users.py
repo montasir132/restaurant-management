@@ -35,16 +35,31 @@ class Customar(User):
             print("Item not found") 
             
     def view_cart(self):
-        print("************View Cart*****************")
+        print("************View Cart************")
         print("Name\tprice\tQuantity")
         for item, quantity in self.cart.items.items():
             print(f"{item.name}\t{item.price}\t{quantity}")
         print(f"Total Price : {self.cart.total_price}")
-        
+    
     def pay_bill(self):
-        print(f"Total {self.cart.total_price} paid successfully")
-        self.cart.clear()
-        
+        total = self.cart.total_price
+        print(f"Your total bill is: {total}")
+        if total == 0:
+            print("Your cart is empty. Nothing to pay.")
+            return
+        amount = int(input("Enter amount you want to pay: "))
+        if amount < total:
+            due = total - amount
+            print(f"You paid {amount}. Still due: {due}")
+        elif amount == total:
+            print(f"Payment successful! You paid full {amount}.")
+            self.cart.clear()
+        else:
+            extra = amount - total
+            print(f"Payment successful! You paid {amount}. Extra balance: {extra} will be returned.")
+            self.cart.clear()
+
+    
 class Employee(User):
     def __init__(self, name, email, phone, address, age, designation, salary):
         super().__init__(name, email, phone, address)
